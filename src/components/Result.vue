@@ -11,7 +11,7 @@ const { numberOfCorrectAnswers, quizQuestionLength } = defineProps([
   <div class="results">
     <p>Your Results...</p>
     <h1>{{ numberOfCorrectAnswers }}/{{ quizQuestionLength }}</h1>
-    <RouterLink to="/">Go Back</RouterLink>
+    <RouterLink to="/" class="router-btn">Go Back</RouterLink>
   </div>
 </template>
 
@@ -27,5 +27,21 @@ p {
 
 h1 {
   font-size: 80px;
+}
+
+.router-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #fffacd;
+  font-size: 18px;
+  color: inherit;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: transform 0.2s;
+}
+
+.router-btn:hover {
+  transform: translateY(-5px);
 }
 </style>
