@@ -4,7 +4,7 @@ https://vue-quiz-sigma.vercel.app/
 
 ## Stacks
 
-Vue, CSS, Composition API.
+Vue, Composition API and CSS.
 
 ## Description
 
