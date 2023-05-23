@@ -1,12 +1,12 @@
 <script setup>
-import { useRouter } from 'vue-router'
+import { useRouter } from 'vue-router';
 
-const router = useRouter()
-const { quiz } = defineProps(['quiz'])
+const router = useRouter();
+const { quiz } = defineProps(['quiz']);
 
 const navigateToQuiz = () => {
-  router.push(`quiz/${quiz.id}`)
-}
+  router.push(`quiz/${quiz.id}`);
+};
 </script>
 
 <template>
@@ -28,6 +28,8 @@ const navigateToQuiz = () => {
   margin-bottom: 35px;
   margin-right: 20px;
   cursor: pointer;
+  background-color: #fffacd;
+  transition: transform 0.2s;
 }
 
 .card img {
@@ -37,10 +39,14 @@ const navigateToQuiz = () => {
 }
 
 .card .card-text {
-  padding: 0 5px;
+  padding: 5px 10px;
 }
 
 .card .card-text h2 {
   font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 </style>
