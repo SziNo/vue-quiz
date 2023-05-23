@@ -1,7 +1,11 @@
-# Vue 3 + Vite
+## Deployed to Vercel
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+https://vue-quiz-sigma.vercel.app/
 
-## Recommended IDE Setup
+## Stacks
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Vue, CSS, Composition API.
+
+## Description
+
+This is a simple quiz app built using Vue. It’s my first Vue project and served as an educational tool to learn about the similarities and differences between React and Vue!
