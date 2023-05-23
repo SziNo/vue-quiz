@@ -1,16 +1,16 @@
 <script setup>
-import q from '../data/quizes.json'
-import { ref, watch } from 'vue'
-import Card from '../components/Card.vue'
+import q from '../data/quizes.json';
+import { ref, watch } from 'vue';
+import Card from '../components/Card.vue';
 
-const quizes = ref(q)
-const search = ref('')
+const quizes = ref(q);
+const search = ref('');
 
 watch(search, () => {
   quizes.value = q.filter((el) =>
-    el.name.toLowerCase().includes(search.value.toLowerCase())
-  )
-})
+    el.name.toLowerCase().includes(search.value.toLowerCase()),
+  );
+});
 </script>
 
 <template>
@@ -47,7 +47,8 @@ header label {
 
 header input {
   border: none;
-  background-color: rgba(128, 128, 128, 0.1);
+  background-color: rgba(218, 211, 211, 0.6);
+  color: rgb(109, 92, 92);
   padding: 10px;
   border-radius: 5px;
 }
